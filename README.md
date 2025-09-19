@@ -1,4 +1,4 @@
-### To-Do/Reminders Desktop Widget
+## To-Do/Reminders Desktop Widget
 
 
 
@@ -22,7 +22,7 @@ This app is built with HTML. CSS, Node.js, and Electron.
 
 -Simple and cute user interface
 
--Drag desktop window
+-Drag the desktop window
 
 
 
@@ -36,11 +36,14 @@ Delete a Task: Click the trash can icon next to the task to remove it
 
 Edit a Task: Click the pencil icon next to the task to edit it
 
-Hide/Show App: Click into system tray and right-click icon to hide/show app
+Hide/Show App: Click into the system tray and right-click the icon to hide/show the app
 
 
 
-\[!\[Watch the demo](./assets/video-thumbnail.png)](https://www.youtube.com/watch?v=YOUR\_VIDEO\_ID)
+
+https://github.com/user-attachments/assets/18a8ecb8-46a2-4f56-b722-3e9aa7394d57
+
+
 
 
 

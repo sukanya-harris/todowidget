@@ -32,7 +32,7 @@ function createWindow() {
 app.on("ready", () => {
     createWindow();
 
-    tray = new Tray(path.join(__dirname, 'resources', 'icon.png'));
+    tray = new Tray(path.join(__dirname, 'resources', 'icon.ico'));
     const contextMenu = Menu.buildFromTemplate([
         { label: 'Show', click: () => mainWindow.show() },
         { label: 'Exit', click: () => { app.isQuiting = true; app.quit(); } }

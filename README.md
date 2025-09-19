@@ -40,7 +40,7 @@ Hide/Show App: Click into system tray and right-click icon to hide/show app
 
 
 
-
+\[!\[Watch the demo](./assets/video-thumbnail.png)](https://www.youtube.com/watch?v=YOUR\_VIDEO\_ID)
 
 
 

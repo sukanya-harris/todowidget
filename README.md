@@ -41,6 +41,10 @@ Hide/Show App: Click into system tray and right-click icon to hide/show app
 
 
 
+https://github.com/user-attachments/assets/18a8ecb8-46a2-4f56-b722-3e9aa7394d57
+
+
+
 
 
 

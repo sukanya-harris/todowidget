@@ -15,7 +15,6 @@ function createWindow() {
         transparent: true,
         icon: path.join(__dirname, 'resources', 'icon.ico'),
         webPreferences: {
-            preload: path.join(__dirname, 'preload.js'),
             nodeIntegration: true,
             contextIsolation: false
         }

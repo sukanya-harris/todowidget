@@ -19,3 +19,10 @@ Thumbs.db
 
 # VS Code
 .vscode/
+
+# Java / Maven
+target/
+
+# Environment & secrets - DO NOT COMMIT
+application.properties
+.env

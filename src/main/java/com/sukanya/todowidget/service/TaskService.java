@@ -25,9 +25,7 @@ public class TaskService {
     public Task updateTask(String id, Task updatedTask) {
         Task existingTask = repository.findById(id)
                 .orElseThrow(() -> new NoSuchElementException("Task not found with id: " + id));
-        if (updatedTask.isCompleted() != null) {
-            existingTask.setCompleted(updatedTask.isCompleted());
-        }
+        existingTask.setCompleted(updatedTask.isCompleted());
         return repository.save(existingTask);
     }
 

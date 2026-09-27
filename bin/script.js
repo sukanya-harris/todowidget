@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:3000/tasks";
+const API_BASE = "http://localhost:8080/api/tasks";
 
 document.addEventListener('DOMContentLoaded', () => {
     const formInput = document.getElementById("input-area");

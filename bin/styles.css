@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka:wght@300..700&family=Press+Start+2P&display=swap');
+
+
+:root {
+    --containerColor: rgb(152, 166, 212);
+    --buttonHoverColor: rgb(68,52,79);
+    --buttonColor: rgb(86,77,128);
+}
+
+html, body {
+    -webkit-app-region: drag;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-family: 'Fredoka', Arial, sans-serif;
+    background: transparent;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(152, 166, 212, 0.7);
+}
+
+#closeBtn {
+    -webkit-app-region: no-drag;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 3px;
+    background-color: var(--buttonColor);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+#closeBtn:hover {
+    transform: scale(1.1);
+    background-color: var(--buttonHoverColor);
+}
+
+.todo-app {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.todo-app h1 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.input-area {
+    -webkit-app-region: no-drag;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 10px 17px;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    border-radius: 22px;
+    background: var(--containerColor);
+    color: white;
+}
+
+.input-area input::placeholder {
+    color: white;
+    font-family: "Fredoka", Arial, sans-serif;
+}
+
+#addBtn {
+    -webkit-app-region: no-drag;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--buttonColor);
+    transition: all 0.2s ease;
+}
+
+#addBtn:hover {
+    transform: scale(1.1);
+    background-color: var(--buttonHoverColor);
+}
+
+.tasks-container {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.taskButtons {
+    -webkit-app-region: no-drag;
+    display: flex;
+    gap: 10px;
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.taskButtons button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: var(--buttonColor);
+    color: white;
+    padding: 5px;
+}
+
+.taskButtons button:hover {
+    transform: scale(1.1);
+    background-color: var(--buttonHoverColor);
+}
+
+#taskList {
+    -webkit-app-region: no-drag;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    scrollbar-width: none; /* Firefox */
+}
+
+#taskList::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+#taskList li {
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    transition: box-shadow 0.3s ease;
+}
+
+#taskList li:hover {
+    box-shadow: 0 0 10px var(--buttonHoverColor);
+}
+
+.customCheckbox {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.customCheckbox input {
+    display: none;
+}
+
+.customCheckbox .checkmark {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('resources/unchecked.svg');
+    background-size: cover;
+    cursor: pointer;
+}
+
+.customCheckbox input:checked + .checkmark {
+    background-image: url('resources/checked.svg');
+}
+
+#taskList li span {
+    flex: 1;
+    margin-left: 10px;
+    word-break: break-word;
+}
+
+#taskList li.completed span {
+    text-decoration: 2px line-through var(--buttonHoverColor);
+    color: var(--buttonHoverColor);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: var(--buttonHoverColor);
+}
